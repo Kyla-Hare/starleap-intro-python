@@ -24,18 +24,56 @@ print("Ch 3 Exercise 1: Not implemented")
 
 print("********** Ch 3 Exercise 2 **********")
 
+def do_four(f):
+    f()
+    f()
+    f()
+    f()
 def print_spam():
     print('spam')
 
-do_twice(print_spam)
+#do_four(print_spam)
 
 
-print("Ch 3 Exercise 2: Not implemented") # Delete this line when you write your code!
 
 
 
 print("********** Ch 3 Exercise 3 **********")
 
-# Do your work for Exercise 3 here.
+def do_twice(f):
+    f()
+    f()
+
+def do_four(f):
+    do_twice(f)
+    do_twice(f)
+
+def print_beam():
+    print('+ - - - -', end= ' ')
+
+def print_post():
+    print('|        ', end=' ')
+
+def print_beams():
+    do_twice(print_beam)
+    print('+')
+
+def print_posts():
+    do_twice(print_post)
+    print('|')
+
+def print_row():
+    print_beams()
+    do_four(print_posts)
+
+def print_grid():
+    do_twice(print_row)
+    print_beams()
+
+print_grid()
+
+
+
+
 
 print("Ch 3 Exercise 3: Not implemented") # Delete this line when you write your code!
