@@ -18,5 +18,3 @@ def countdown(n, verbose = False):
 print("\nCountdown:")
 countdown(10)
 
-print("\nCountdown with details:")
-countdown(5, verbose=True)
