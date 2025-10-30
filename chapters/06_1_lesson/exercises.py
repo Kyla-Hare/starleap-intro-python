@@ -25,11 +25,9 @@ y = x + 1
 
 # print("********** Ch 6 Exercise 2 **********")
 
-
-# print("Ch 6 Exercise 2: Not implemented") # Delete this line when you write your code!
-
-
-
+def ack(m, n): 
+    
+    
 # print("********** Ch 6 Exercise 3 **********")
 
 # Exercise 3 should be worked in a new file called palindrome.py
