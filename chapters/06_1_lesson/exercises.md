@@ -58,7 +58,7 @@ We’ll see how they work in Chapter 8.
 1. Type these functions into a file named *palindrome.py* and test them out. What happens if you call middle with a string with two letters? One letter? What about the empty string, which is written '' and contains no letters?
 2. Write a function called is_palindrome that takes a string argument and returns True if it is a palindrome and False otherwise. Remember that you can use the built-in function len to check the length of a string.
 
-
+is
 
 ## Exercise 4   
 A number, a, is a power of b if it is divisible by b and a/b is a power of b. Write a function called *is_power* that takes parameters a and b and returns True if a is a power of b.

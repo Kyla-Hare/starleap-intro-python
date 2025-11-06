@@ -25,7 +25,7 @@ y = x + 1
 
 # print("********** Ch 6 Exercise 2 **********")
 
-def ack(m, n): 
+# def ack(m, n): 
     
     
 # print("********** Ch 6 Exercise 3 **********")
@@ -38,9 +38,23 @@ def ack(m, n):
 
 # Do your work for Exercise 4 here.
 
-# print("Ch 6 Exercise 4: Not implemented") # Delete this line when you write your code!
+def is_power(a, b):
 
+    if a == 1:
+        return True 
+    elif a == b:
+        return True 
+    elif a > b:
+        return is_power(a/b,b) 
+    else: 
+        return False 
 
+while True:
+
+    n = int(input('number '))
+    result = is_power(n,3) 
+    print(result) 
+        
 
 # print("********** Ch 6 Exercise 5 **********")
 
