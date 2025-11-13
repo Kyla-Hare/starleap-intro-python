@@ -25,9 +25,15 @@ y = x + 1
 
 # print("********** Ch 6 Exercise 2 **********")
 
-# def ack(m, n): 
-    
-    
+def ack(m, n): 
+    if m == 0: 
+        return  n + 1
+    elif m > 0 and n == 0:
+        return ack(m-1, 1) 
+    elif m > 0 and n > 0:
+        return ack(m-1, ack(m, n-1))
+# print(ack(3, 4))
+
 # print("********** Ch 6 Exercise 3 **********")
 
 # Exercise 3 should be worked in a new file called palindrome.py
@@ -38,26 +44,31 @@ y = x + 1
 
 # Do your work for Exercise 4 here.
 
-def is_power(a, b):
+# def is_power(a, b):
 
-    if a == 1:
-        return True 
-    elif a == b:
-        return True 
-    elif a > b:
-        return is_power(a/b,b) 
-    else: 
-        return False 
+#     if a == 1:
+#         return True 
+#     elif a == b:
+#         return True 
+#     elif a > b:
+#         return is_power(a/b,b) 
+#     else: 
+#         return False 
 
-while True:
+# while False:
 
-    n = int(input('number '))
-    result = is_power(n,3) 
-    print(result) 
+#     n = int(input('number '))
+#     result = is_power(n,3) 
+#     # print(result) 
         
 
-# print("********** Ch 6 Exercise 5 **********")
+# # print("********** Ch 6 Exercise 5 **********")
 
-# Do your work for Exercise 5 here.
+# # Do your work for Exercise 5 
 
-# print("Ch 6 Exercise 5: Not implemented") # Delete this line when you write your code!
+def gcd(x, y): 
+    if y == 0: 
+        return x 
+    else:
+        return gcd(y, x % y)
+print(gcd(9890, 78))
